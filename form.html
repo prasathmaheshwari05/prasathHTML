@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>form</h2>
+    
+    <form>
+        <div>
+        <label for="uname">Enter your Name</label>
+        <input type="text" name="uname" id="uname" placeholder="enter your name" pattern="^[a-zA-Z ]{3,12}$">
+    </div>
+        <div>
+        <label for="password">Enter your Password</label>
+        <input type="password" name="password" id="password" placeholder="enter your password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+    </div>
+    </div>
+        <div>
+        <label for="emailid">Enter your email id</label>
+        <input type="email" name="emailid" id="emailid" placeholder="enter your email" required>
+    </div>
+        <div>
+        <label for="phonenumber">Enter contact number</label>
+        <input type="tel" name="phonenumber" id="phonenumber" placeholder="enter your mobile number" required pattern="^[0-9]{9,11}$">
+    </div>
+    </div>
+        <div>
+        <label for="DATE OF BIRTH">Enter YOUR dob</label>
+        <input type="date" name="DATE OF BIRTH" id="DATE OF BIRTH" placeholder="enter your dob" required >
+    </div>
+        <div>
+        <label for="gender" >select your gender</label>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" id="gender" value="female" checked>female
+        <input type="radio" name="gender" id="gender" value="transgender" >transgender
+    </div>
+        <div>
+        <label for="edu">select your qualification</label>
+        <input type="checkbox" name="edu" id="edu"  value="sslc">sslc
+        <input type="checkbox" name="edu" id="edu"  value="hslc">hslc
+        <input type="checkbox" name="edu" id="edu"  value="ug">ug
+        <input type="checkbox" name="edu" id="edu"  value="pg">pg
+        
+    </div>
+    
+        <div>
+        <label for="course">select your course</label>
+        <select multiple name="course" id="course" required>
+            <option value="java">java</option>
+            <option value="python">python</option>
+            <option value="sql">sql</option>
+            <option value=".net">.net</option>
+        </select>
+    </div>
+    
+
+
+
+    <button type="submit">submit</button>
+    </form>
+</body>
+</html>
